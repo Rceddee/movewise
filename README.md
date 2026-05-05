@@ -50,6 +50,12 @@ MoveWise is a production-grade Android application that combines real-time AI co
 - A free **Gemini API Key** from [Google AI Studio](https://aistudio.google.com/)
 - A **Firebase project** with Authentication (Email/Password) and Realtime Database enabled
 
+### Pre-built APKs (GitHub Releases)
+
+You can download the latest automated build of this app from the **[Releases](../../releases)** tab.
+
+> **⚠️ IMPORTANT:** The pre-built APKs on GitHub are generated for continuous integration testing and **do not contain real API keys**. If you download the APK directly from GitHub Releases, the app will install and open, but it will not connect to Firebase or the Gemini AI Coach. To run a fully functional version of MoveWise, you must clone the repository and follow the **Installation Steps** below to provide your own credentials.
+
 ### Installation Steps
 
 1. **Clone or download** the repository.
