@@ -27,7 +27,7 @@ class GeminiApiClient {
     ): String = withContext(Dispatchers.IO) {
 
         if (API_KEY == "YOUR_API_KEY_HERE" || API_KEY.isEmpty()) {
-            return@withContext "API Key missing! Please open GeminiApiClient.kt and paste your free Google AI Studio API key at the top to activate me."
+            return@withContext "API Key missing! Please add your Gemini API key to local.properties as 'gemini.api.key=YOUR_KEY' to activate me."
         }
 
         try {
