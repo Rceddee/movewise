@@ -21,7 +21,7 @@ Thank you for considering contributing to MoveWise! This document covers the dev
 
 1. **Clone** the repository and open in Android Studio.
 2. Let Gradle sync resolve all dependencies automatically.
-3. Add your **Gemini API key** in `GeminiApiClient.kt` (line 14).
+3. Add your **Gemini API key** to `local.properties`: `gemini.api.key=YOUR_API_KEY`.
 4. Add your `google-services.json` file to `app/`.
 5. Connect a physical Android device (recommended) or start an API 24+ emulator.
 6. Run the `app` configuration. Build should succeed on first attempt.
@@ -91,7 +91,7 @@ app/src/main/java/com/example/movewise/
 ## 🔑 API Keys & Secrets
 
 - **Never commit real API keys** to version control.
-- The `GeminiApiClient.kt` file contains a placeholder `API_KEY` constant. Contributors should replace it locally and add the file to `.gitignore` if modifying sensitive paths, or use a `local.properties` approach for team environments.
+- The Gemini API Key is loaded via `BuildConfig`. Add `gemini.api.key=YOUR_KEY` to your `local.properties` file, which is already safely listed in `.gitignore`.
 - Firebase config is stored in `google-services.json` which is already gitignored by the Android `.gitignore` template.
 
 ---

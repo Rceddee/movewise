@@ -54,11 +54,11 @@ MoveWise is a production-grade Android application that combines real-time AI co
 
 1. **Clone or download** the repository.
 2. Open in **Android Studio** and let Gradle sync.
-3. **Add your Gemini API key** in:
+3. **Add your Gemini API key** to your `local.properties` file in the root of the project:
+   ```properties
+   gemini.api.key=YOUR_API_KEY_HERE
    ```
-   app/src/main/java/com/example/movewise/model/GeminiApiClient.kt
-   ```
-   Replace the `API_KEY` constant value with your key.
+   This file is intentionally ignored by Git to keep your credentials secure.
 4. **Firebase setup:**
    - Register your app in the [Firebase Console](https://console.firebase.google.com/).
    - Enable **Email/Password** authentication.
@@ -122,5 +122,5 @@ app/src/main/java/com/example/movewise/
 
 - **Step Counter**: The hardware `TYPE_STEP_COUNTER` sensor is used in session-relative mode. The auto-increment from sensor events is currently commented out to prevent double-counting with manual entries; users should use the "+" button for accurate step logging.
 - **Nutrition Data**: Open Food Facts data may be sparse for regional / packaged foods. The app falls back to a hardcoded fuzzy-match dictionary for ~15 common food types.
-- **API Key Security**: The Gemini API key is stored in plain text in `GeminiApiClient.kt`. For a production release, move it to a secured backend proxy or Android Keystore mechanism.
+- **API Key Security**: The Gemini API key is securely injected from `local.properties` via `BuildConfig.GEMINI_API_KEY`. It is excluded from version control. However, for a production release, it is still recommended to move it to a secured backend proxy to prevent reverse engineering of the APK.
 - **Firebase Rules**: Ensure Realtime Database security rules are set to restrict each user's node to only their authenticated UID.
