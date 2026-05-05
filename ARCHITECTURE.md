@@ -224,7 +224,7 @@ POST https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:genera
 | **User Data Isolation** | SharedPreferences scoped to `"MoveWiseData_{uid}"`. Firebase paths scoped to `users/{uid}/`. |
 | **Session Management** | Firebase Auth manages tokens. `SplashActivity` checks `FirebaseAuth.getInstance().currentUser` for auto-login. |
 | **Logout** | `DataRepository.reset()` nullifies the singleton; next `init()` call with a new UID creates a fresh scoped instance. |
-| **API Key** | Gemini API key hardcoded in `GeminiApiClient.kt`. **Recommended:** move to a server-side proxy for production. |
+| **API Key** | Gemini API key is securely injected from `local.properties` via `BuildConfig.GEMINI_API_KEY`. |
 
 ---
 

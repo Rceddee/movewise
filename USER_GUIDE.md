@@ -206,7 +206,7 @@ Access **Settings** from the gear icon in the bottom navigation bar or from the 
 
 | Issue | Solution |
 |---|---|
-| **AI Chat not responding / "API Key missing"** | Open `GeminiApiClient.kt` and paste your free Gemini API key. |
+| **AI Chat not responding / "API Key missing"** | Ensure you have added `gemini.api.key=YOUR_KEY` to your `local.properties` file in the project root. |
 | **Camera not working** | Go to Android Settings → Apps → MoveWise → Permissions → Enable Camera. |
 | **Nutrition scan shows "Could not find nutrition"** | Enter nutrition details manually in the dialog that appears, or try the barcode scanner. |
 | **Steps not updating automatically** | Some devices do not have a hardware step counter. Use the manual "Log Steps" button on the Dashboard. |
