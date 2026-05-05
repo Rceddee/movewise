@@ -5,12 +5,13 @@ plugins {
 }
 
 import java.util.Properties
+import java.io.FileInputStream
 
 val localProperties = Properties()
 val localPropertiesFile = rootProject.file("local.properties")
 if (localPropertiesFile.exists()) {
     localProperties.apply {
-        load(java.io.FileInputStream(localPropertiesFile))
+        load(FileInputStream(localPropertiesFile))
     }
 }
 val geminiApiKey: String = localProperties.getProperty("gemini.api.key") ?: ""
