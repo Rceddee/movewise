@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tones">
+        <item>Professional</item>
+        <item>Friendly</item>
+        <item>Motivating</item>
+    </string-array>
+    <string-array name="focus_areas">
+        <item>General Fitness</item>
+        <item>Weight Loss</item>
+        <item>Muscle Gain</item>
+        <item>Endurance</item>
+    </string-array>
+</resources>

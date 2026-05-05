@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Modern Material 3 Palette -->
+    <color name="md_theme_light_primary">#4F46E5</color>
+    <color name="md_theme_light_onPrimary">#FFFFFF</color>
+    <color name="md_theme_light_primaryContainer">#E0E7FF</color>
+    <color name="md_theme_light_onPrimaryContainer">#1E1B4B</color>
+
+    <color name="md_theme_light_secondary">#7C3AED</color>
+    <color name="md_theme_light_onSecondary">#FFFFFF</color>
+    <color name="md_theme_light_secondaryContainer">#EDE9FE</color>
+    <color name="md_theme_light_onSecondaryContainer">#2E1065</color>
+
+    <color name="md_theme_light_tertiary">#EC4899</color>
+    <color name="md_theme_light_onTertiary">#FFFFFF</color>
+    <color name="md_theme_light_tertiaryContainer">#FCE7F3</color>
+    <color name="md_theme_light_onTertiaryContainer">#831843</color>
+
+    <!-- Custom Brand Colors -->
+    <color name="brand_royal">#4F46E5</color>
+    <color name="brand_lavender">#9333EA</color>
+    <color name="brand_sky">#2563EB</color>
+
+    <!-- Premium Aliases -->
+    <color name="primary_purple">#7C3AED</color>
+    <color name="primary_blue">#2563EB</color>
+
+    <!-- Gradients -->
+    <color name="brand_gradient_start">#4F46E5</color>
+    <color name="brand_gradient_mid">#7C3AED</color>
+    <color name="brand_gradient_end">#9333EA</color>
+
+    <!-- Splash Gradient -->
+    <color name="bg_splash_start">#1E1B4B</color>
+    <color name="bg_splash_mid">#4F46E5</color>
+    <color name="bg_splash_end">#7C3AED</color>
+
+    <!-- Bottom Nav -->
+    <color name="bg_nav_active">#EDE9FE</color>
+    <color name="bg_nav_surface">#FFFFFF</color>
+
+    <!-- Glassmorphism -->
+    <color name="glass_white">#26FFFFFF</color>
+    <color name="glass_stroke">#40FFFFFF</color>
+    <color name="glass_card_bg">#F0F0FF</color>
+
+    <!-- Functional -->
+    <color name="success_green">#059669</color>
+    <color name="warning_amber">#D97706</color>
+    <color name="danger_red">#DC2626</color>
+
+    <!-- Neutrals -->
+    <color name="bg_surface">#F8FAFC</color>
+    <color name="bg_card">#FFFFFF</color>
+    <color name="text_main">#0F172A</color>
+    <color name="text_sub">#64748B</color>
+    <color name="border_subtle">#E2E8F0</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#0F172A</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Chat Bubble Gradient -->
+    <color name="chat_user_start">#4F46E5</color>
+    <color name="chat_user_end">#7C3AED</color>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp"
+    app:cardBackgroundColor="@color/bg_card"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/border_subtle"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_meal_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_meal_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_gallery" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tv_meal_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="Meal Name"
+            android:textColor="@color/text_main"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/tv_meal_calories"
+            app:layout_constraintStart_toEndOf="@id/card_meal_image"
+            app:layout_constraintTop_toTopOf="@id/card_meal_image" />
+
+        <TextView
+            android:id="@+id/tv_meal_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textColor="@color/text_sub"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/tv_meal_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_meal_name" />
+
+        <TextView
+            android:id="@+id/tv_meal_macros"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Macros"
+            android:textColor="@color/text_sub"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@id/tv_meal_calories"
+            app:layout_constraintStart_toStartOf="@id/tv_meal_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_meal_time" />
+
+        <TextView
+            android:id="@+id/tv_meal_calories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="350 kcal"
+            android:textColor="@color/brand_sky"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
